@@ -1,0 +1,673 @@
+html{width: 100%;height: 100%;}
+body{
+    width: 100%;
+    font-family: "Microsoft YaHei";
+    overflow: hidden;
+    height: 100%;
+}
+/* 头部 */
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 70px; */
+    background: #2c3e50;
+    z-index: 999;
+}
+#header nav ul{
+   list-style: none;
+}
+#header nav ul li{
+   float: left;
+}
+ #header nav ul li a{
+   display: block;
+   margin: 0 15px;
+   line-height: 70px;
+   color: #fff;
+   font-size: 16px;
+}
+#header nav ul li.hover a{
+    color: rgb(208, 255, 0);
+ }
+/* 内容部分 */
+#body{
+    width: 100%;
+    height: 100%;
+    position: relative; 
+    touch-action: none;
+    transform: translate3d(0px, 0px, 0px); 
+    transition: all 700ms ease;
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+.body_box{
+    width: 100%;
+    height: 100%;
+    background:  url(../img/bg.png);
+    overflow: hidden;
+}
+.bg1{
+    background-color: rgb(158, 212, 158) ;
+}
+.bg2{
+    background-color: rgb(212, 188, 158) ;
+}
+.bg3{
+    background-color: rgb(186, 158, 212) ;
+}
+.bg4{
+    background-color: rgb(155, 156, 252) ;
+}
+.bg5{
+    background-color: rgb(158, 204, 212) ;
+}
+.bg6{
+    background-color: rgb(212, 188, 158) ;
+}
+
+.index h2,
+.about h2,
+.skill h2,
+.experience h2,
+.works h2,
+.call h2{
+    color: #fff;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 50px;
+}
+/* svg标题 */
+.index .text{
+    font-size: 64px;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    fill: none;
+    stroke-width: 2px;
+    stroke-dasharray: 90 310;
+    animation: stroke 6s infinite linear;
+}
+.about .text,
+.skill .text,
+.experience .text,
+.works .text,
+.call .text{
+    font-size: 34px;
+    text-transform: uppercase;
+    fill: none;
+    stroke-width: 1px;
+    stroke-dasharray: 90 310;
+    animation: stroke 6s infinite linear;
+}
+.index .text-1,
+.about .text-1,
+.skill .text-1,
+.experience .text-1,
+.works .text-1,
+.call .text-1{
+    stroke: #3498db;
+    text-shadow: 0 0 5px #3498db;
+    animation-delay: -1.5s;
+}
+.index .text-2,
+.about .text-2,
+.skill .text-2,
+.experience .text-2,
+.works .text-2,
+.call .text-2{
+    stroke: #f39c12;
+    text-shadow: 0 0 5px #f39c12;
+    animation-delay: -3s;
+}
+.index .text-3,
+.about .text-3,
+.skill .text-3,
+.experience .text-3,
+.works .text-3,
+.call .text-3{
+    stroke: #e74c3c;
+    text-shadow: 0 0 5px #e74c3c;
+    animation-delay: -4.5s;
+}
+.index .text-4,
+.about .text-4,
+.skill .text-4,
+.experience .text-4,
+.works .text-4,
+.call .text-4{
+    stroke: #9b59b6;
+    text-shadow: 0 0 5px #9b59b6;
+    animation-delay: -6s;
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+/* 首页 */
+.index_box{
+    transform: translateY(10%);
+}
+.index_box_b p,.index_box_b p a{
+    color: #fff;
+    line-height: 35px;
+    font-size: 18px;
+}
+/* 关于我 */
+.about_box{
+    transform: translateY(10%);
+    position: relative;
+}
+.touxiang{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url(../img/touxiang.JPG) center no-repeat;
+    margin: 0 auto;
+    background-size: cover;
+    cursor: pointer;
+}
+.about_box_b{
+   width: 50%;
+   margin: 0 auto;
+   margin-top: 30px;
+}
+.about_box_b p{
+    font-size: 16px;
+    text-align: left;
+    text-indent: 2em;
+    letter-spacing: 1px;
+}
+.info{
+    display: none;
+    width: 80%;
+    box-shadow: 0 0 15px rgb(138, 138, 138);
+    margin: 0 auto;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(50%);
+    margin-left: -30%;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.info h3{
+    color: #666;
+    font-size: 20px;
+    line-height: 50px;
+}
+.info p{
+    color: #4dd0e1;
+    font-size: 16px;
+    line-height: 30px;
+}
+.info span{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+/* 技能 */
+.skill_box{
+    width: 90%;
+    margin: 0 auto
+}
+.skill_box_item{
+    float: left;
+    position: relative;
+    /* margin: 0 15px; */
+    width: 25%;
+}
+.skill_box_item p{
+    color: #fff;
+    font-size: 16px;
+}
+.container{
+    overflow: hidden; 
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border:5px solid rgb(118,218,255);
+    box-sizing: border-box;
+    /* transform: translate(50%,50%); */
+    margin: 0 auto;
+ 
+}
+.wave{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background-color: rgb(118,218,255);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.wave span{
+    position: absolute;
+    top: 10%;
+    color: #333;
+    font-size: 18px;
+    z-index: 30;
+    text-align: center;
+    left: 40%;
+}
+.wave::before,
+.wave::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 50%;
+    background:rgba(255,255,255,0.3);
+    border-radius: 45%;
+    transform: translate(-50%,-45%) rotate(0);
+    animation: all 6s linear infinite;
+    z-index: 10;
+    box-sizing: border-box;
+}
+.wave::after{
+    background:rgba(255,255,255,0.9);
+    border-radius: 47%;
+    transform: translate(-50%,-45%) rotate(0);
+    animation: rotate 10s linear infinite;
+    z-index: 20;
+}
+/* @keyframes rotate{
+    50%{
+        border-radius: 47%;
+        transform: translate(-50%,-45%) rotate(180deg);
+    }
+    100%{
+        border-radius: 47%;
+        transform: translate(-50%,-45%) rotate(360deg);
+    }
+} */
+
+/* 经验 */
+.exp_big_box{
+    /* transform: translateY(10%); */
+}
+.exp_big_boxs{
+    /* transform: translateY(100%); */
+}
+.exp_big_box .block{
+    display: block;
+}
+.exp_box{
+    width: 50%;
+    height: 350px;
+    background: #fff;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 35px #000;
+    display: none;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+.exp_box h3{
+    font-size: 26px;
+    color: rgb(116, 117, 207);
+    line-height: 50px;
+}
+.exp_box p{
+    font-size: 18px;
+    color: rgb(116, 117, 207);
+    line-height: 30px;
+}
+.exp_box ul{
+    text-align: left;
+    transform: translate(25%, 10%);
+}
+.exp_box ul li{
+    list-style: circle;
+    margin-left: 30px;
+    font-size: 16px;
+}
+.exp_big_boxs{
+  margin-top:10px; 
+}
+.exp_big_boxs span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background:rgba(255,255, 255, .6);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.exp_big_boxs span.cur{
+    background:rgba(255,255, 255,1);
+}
+/* 作品 */
+.works_box{
+    width: 95%;
+    margin: 0 auto;
+    transform: translateY(-8%);
+}
+.works_item{
+    display:inline-block;
+    width: 23%;
+    background: #fff;
+    height: 200px;
+    box-sizing: border-box;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.works_inner{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    transform: translateY(80%);
+    box-sizing: border-box;
+}
+.works_item img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    transition: all .5s;
+}
+.works_item:hover img{
+    transform: scale(1.1,1.1);
+ }
+.works_item p{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background:rgba(0,0, 0, 0);
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.works_item p:hover{
+    opacity: 1;
+    background:rgba(0,0, 0,.7);
+}
+
+/* 联系我 */
+.call_box{
+    transform: translate(50%,10%);
+    margin-left: -20%;
+}
+.call_box ul{
+  text-align: left;
+}
+.call_box ul li{
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+}
+.call_box ul li span{
+    display: inline-block;
+    color: rgb(226, 109, 109);
+    font-size: 22px;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+.call_box_b{
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.call_box_b a.qq{
+    background: url(../img/qq.png) no-repeat;
+    background-size: contain;
+}
+.call_box_b a.email{
+    background: url(../img/email.png) no-repeat;
+    background-size: contain;
+}
+.call_box_b a.github{
+    background: url(../img/github.png) no-repeat;
+    background-size: contain;
+}
+.call_box_b a.tell{
+    background: url(../img/tell.png) no-repeat;
+    background-size: contain;
+}
+.call_box_b_item{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background: #fff;
+    border-radius: 50%;
+}
+.download{
+    text-align: left;
+    transform: translateX(-50%);
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.download a{
+  display: block;
+  padding: 10px 30px;
+  background: rgb(92, 157, 255);
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  width: 80px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    #header nav ul li a{
+        line-height: 45px;
+        margin:0 5px;
+        font-size: 12px;
+    }
+    #body{
+        margin-top: 45px;
+    }
+    .index_box_b p, .index_box_b p a{
+        font-size: 14px;
+    }
+    .index .text{
+        font-size: 30px;
+    }
+    .about_box{
+        transform: translateY(-5%);
+    }
+    .about_box_b{
+        width: 90%;
+    }
+    .skill_box_item{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .exp_box{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .exp_box h3{
+        font-size: 18px;
+    }
+    .exp_box ul{
+        transform: translate(0); 
+        margin-top: 10px;
+    }
+    .exp_big_boxs{
+        margin-top: 10px;
+    }
+
+    .container{
+        width: 100px;
+        height: 100px;
+    }
+    .wave{
+        width: 80px;
+        height: 80px;
+    }
+    .wave::before,
+    .wave::after{
+        width: 120px;
+        height: 120px;
+    }
+    .wave span{
+        left: 30%;
+    }
+    .works_box{
+        transform: translateY(-5%);
+    } 
+    .works_item{
+        width: 45%;
+        height: 180px;
+        margin: 0;
+    }
+    .works_item p{
+      opacity: 1;
+      background:rgba(0,0, 0,.5);
+    }
+    .works_inner{
+        display: inline;
+        font-size: 12px;
+    }
+    .call_box{
+        width: 95%;
+        margin: 0 auto;
+        transform: translate(0);
+    }
+    .call_box ul li{
+        font-size: 14px;
+    }
+    .call_box ul li span{
+        width: 60px;
+        font-size: 14px;
+    }
+    .call_box_b{
+        width:90%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .download{
+      
+        transform: translateX(0);
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .works_item{
+        width: 45%;
+        height: 120px;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    #header nav ul li a{
+        line-height: 45px;
+        margin:0 5px;
+        font-size: 12px;
+    }
+    #body{
+        margin-top: 45px;
+    }
+    .index_box_b p, .index_box_b p a{
+        font-size: 14px;
+    }
+    .index .text{
+        font-size: 30px;
+    }
+    .about_box{
+        transform: translateY(-5%);
+    }
+    .about_box_b{
+        width: 90%;
+    }
+    .skill_box_item{
+        width: 50%;
+        margin-top: 25px;
+    }
+
+    .exp_box{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .exp_box h3{
+        font-size: 18px;
+    }
+    .exp_box ul{
+        transform: translate(0); 
+        margin-top: 10px;
+    }
+    .exp_big_boxs{
+        margin-top: 10px;
+    }
+
+    .container{
+        width: 100px;
+        height: 100px;
+    }
+    .wave{
+        width: 80px;
+        height: 80px;
+    }
+    .wave::before,
+    .wave::after{
+        width: 120px;
+        height: 120px;
+    }
+    .wave span{
+        left: 30%;
+    }
+    .works_box{
+        transform: translateY(-5%);
+    } 
+    .works_item{
+        width: 45%;
+        height: 100px;
+        margin: 0;
+    }
+    .works_item p{
+      opacity: 1;
+      background:rgba(0,0, 0,.5);
+    }
+    .works_inner{
+        display: inline;
+        font-size: 12px;
+    }
+    .call_box{
+        width: 95%;
+        margin: 0 auto;
+        transform: translate(0);
+    }
+    .call_box ul li{
+        font-size: 14px;
+    }
+    .call_box ul li span{
+        width: 60px;
+        font-size: 14px;
+    }
+    .call_box_b{
+        width:90%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .download{
+      
+        transform: translateX(0);
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
