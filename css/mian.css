@@ -327,6 +327,7 @@ body{
     line-height: 30px;
 }
 .exp_box ul{
+    width: 100%;
     text-align: left;
     transform: translate(25%, 10%);
 }
@@ -567,6 +568,11 @@ body{
         margin-top: 20px;
     }
 }
+@media screen and (max-width: 1000px) {
+    .exp_box ul{
+        transform: translateY(0);
+    }
+}
 @media screen and (max-width: 500px) {
     .works_item{
         width: 45%;
@@ -574,6 +580,7 @@ body{
         margin: 0;
     }
 }
+
 @media screen and (max-width: 400px) {
     #header nav ul li a{
         line-height: 45px;
@@ -669,5 +676,12 @@ body{
         transform: translateX(0);
         margin: 0 auto;
         margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 350px){
+    .index .text {
+        font-size: 25px;
     }
 }

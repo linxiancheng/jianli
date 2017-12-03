@@ -3,13 +3,15 @@
         {
             "name": "林献程",
             "age": 23,
+            "ages":"1993年6月17日",
             "school": {
-                "school_name": "广东农工商职业技术学院",
-                "major": "计算机多媒体技术"
+                "school_name": "广东农工商职业技术学院【2012~2015】",
+                "major": "计算机多媒体技术",
+                "lei":"大专"
             },
             "about": {
                 "img": "url",
-                "introduce": "个人介绍"
+                "introduce": "我叫林献程，今年<span>23</span>岁，坐标海南，是一名前端工程师。虽然是2017年3月才开始从事前端职位，但是很庆幸，我在大学所学的就是这方面的知识，所以在原有的基础上在自学目前较新的技术，还是比较容易上手的。"
             },
             "skill": [
                 {
@@ -73,8 +75,10 @@
             ],
             "call": [
                 {
-                    "img": "",
-                    "url": "https://github.com/linxiancheng"
+                    "github": "https://github.com/linxiancheng",
+                    "QQ": "296011508",
+                    "Email": "296011508@qq.com",
+                    "namber": "13560052811"
                 }
             ]
         }
